@@ -28,12 +28,12 @@ public class OrderService {
 
 	@Autowired
 	private OrderRowRepository rowRepo;
-	
+
 	@Autowired
 	private OrderMapper ordMap;
 
 	public OrderDTO insertOrder(Integer userId) {
-		
+
 		OrderDTO orderDto = null;
 		Cart cart = cartRepo.findByUserUserId(userId);
 		Order order = new Order();
@@ -69,7 +69,7 @@ public class OrderService {
 
 		order.setOrderRow(rowList);
 		cartRepo.delete(cart);
-		
+
 		return orderDto;
 	}
 }

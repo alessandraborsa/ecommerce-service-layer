@@ -8,15 +8,15 @@ import it.objectmethod.ecommerce.entity.Order;
 import it.objectmethod.ecommerce.service.dto.OrderDTO;
 
 @Component
-public class OrderMapper implements EntityMapper<OrderDTO, Order>{
-	
+public class OrderMapper implements EntityMapper<OrderDTO, Order> {
+
 	@Override
 	public Order toEntity(OrderDTO dto) {
 		Order entity = new Order();
 		entity.setOrderDate(dto.getOrderDate());
 		entity.setOrderId(dto.getOrderId());
 		entity.setOrderNum(dto.getOrderNum());
-		
+
 		return entity;
 	}
 

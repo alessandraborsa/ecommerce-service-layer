@@ -1,26 +1,43 @@
 package it.objectmethod.ecommerce.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import it.objectmethod.ecommerce.service.JWTService;
 import it.objectmethod.ecommerce.service.UserService;
 import it.objectmethod.ecommerce.service.dto.UserDTO;
 
 @RestController
+
+@RequestMapping("/api/user")
 public class UserController {
 
 	@Autowired
-	private UserService userSrvc;
+	private UserService userService;
 
-	@PostMapping("/userlogin")
-	public UserDTO userLogin(@RequestParam("userName") String userName,
+	@Autowired
+	private JWTService jwtService;
+
+	@RequestMapping("/login")
+	public ResponseEntity<String> userLogin(@RequestParam("username") String userName,
 			@RequestParam("password") String password) {
+		ResponseEntity<String> resp = null;
+		UserDTO userDto = userService.loginUser(userName, password);
+		if (userDto != null) {
 
-		UserDTO userLogged = null;
-		userLogged = userSrvc.loginUser(userName, password);
-		
-		return userLogged;
+			String token = jwtService.getUserToken(userDto);
+
+			resp = new ResponseEntity<>(token, HttpStatus.OK);
+
+		} else {
+			resp = new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+		}
+
+		return resp;
 	}
+
 }
