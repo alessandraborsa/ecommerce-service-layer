@@ -14,7 +14,6 @@ public class CartMapper implements EntityMapper<CartDTO, Cart> {
 	public Cart toEntity(CartDTO dto) {
 		Cart entity = new Cart();
 		entity.setCartId(dto.getCartId());
-		entity.setCartList(dto.getCartList());
 		
 		return entity;
 	}
@@ -23,7 +22,6 @@ public class CartMapper implements EntityMapper<CartDTO, Cart> {
 	public CartDTO toDto(Cart entity) {
 		CartDTO dto = new CartDTO();
 		dto.setCartId(entity.getCartId());
-		dto.setCartList(entity.getCartList());
 		dto.setUserId(entity.getUser().getUserId());
 
 		return dto;

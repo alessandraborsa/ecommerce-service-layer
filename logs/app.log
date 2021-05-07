@@ -1,0 +1,9 @@
+2021-05-07 11:39:57,309 INFO o.s.b.StartupInfoLogger [main] Starting EcommerceApplicationTests using Java 15.0.2 on MBPdiAlessandra.homenet.telecomitalia.it with PID 3135 (started by alessandraborsa in /Users/alessandraborsa/Documents/om/ecommerce-master)
+2021-05-07 11:39:57,315 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-05-07 11:39:57,319 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-05-07 11:40:04,923 INFO o.s.b.StartupInfoLogger [main] Started EcommerceApplicationTests in 8.005 seconds (JVM running for 9.829)
+2021-05-07 11:52:24,861 INFO o.s.b.StartupInfoLogger [main] Starting EcommerceApplication using Java 15.0.2 on MBPdiAlessandra.homenet.telecomitalia.it with PID 3211 (/Users/alessandraborsa/Documents/om/ecommerce-master/target/classes started by alessandraborsa in /Users/alessandraborsa/Documents/om/ecommerce-master)
+2021-05-07 11:52:24,885 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-05-07 11:52:24,889 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-05-07 11:52:32,746 INFO o.s.b.StartupInfoLogger [main] Started EcommerceApplication in 8.335 seconds (JVM running for 9.529)
+2021-05-07 11:52:44,762 INFO i.o.e.c.UserController [http-nio-8080-exec-4] Richiesta di login con nome utente: [Stefania]

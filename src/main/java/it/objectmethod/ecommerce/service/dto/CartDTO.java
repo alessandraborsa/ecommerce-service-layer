@@ -1,12 +1,11 @@
 package it.objectmethod.ecommerce.service.dto;
 
 import java.util.List;
-import it.objectmethod.ecommerce.entity.CartDetail;
 
 public class CartDTO {
 	private Integer cartId;
 	private Integer userId;
-	private List<CartDetail> cartList;
+	private List<CartDetailDTO> cartList;
 
 	public Integer getCartId() {
 		return cartId;
@@ -24,11 +23,11 @@ public class CartDTO {
 		this.userId = userId;
 	}
 
-	public List<CartDetail> getCartList() {
+	public List<CartDetailDTO> getCartList() {
 		return cartList;
 	}
 
-	public void setCartList(List<CartDetail> cartList) {
+	public void setCartList(List<CartDetailDTO> cartList) {
 		this.cartList = cartList;
 	}
 

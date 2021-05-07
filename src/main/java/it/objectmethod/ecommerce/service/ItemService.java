@@ -2,6 +2,8 @@ package it.objectmethod.ecommerce.service;
 
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -18,10 +20,14 @@ public class ItemService {
 
 	@Autowired
 	private ItemMapper itemMapper;
+	
+	private static final Logger logger = LogManager.getLogger(ItemService.class);
 
-	public List<ItemDTO> showItem(String itemCode, String ItemName) {
+	public List<ItemDTO> showItem(String itemCode, String itemName) {
 		
-		List<Item> items = itemRepo.findItems(itemCode, ItemName);
+		logger.info("Richiesta ricerca articolo per nome [" + itemName + "] e per codice [" + itemCode + "]");
+		
+		List<Item> items = itemRepo.findItems(itemCode, itemName);
 		List<ItemDTO> itemsDto = itemMapper.toDto(items);
 		return itemsDto;
 	}

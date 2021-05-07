@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -31,9 +33,12 @@ public class OrderService {
 
 	@Autowired
 	private OrderMapper ordMap;
+	
+	private static final Logger logger = LogManager.getLogger(OrderService.class);
 
 	public OrderDTO insertOrder(Integer userId) {
 
+		logger.info("Richiesta servizio salvataggio ordine per l'utente [" + userId + "]");
 		OrderDTO orderDto = null;
 		Cart cart = cartRepo.findByUserUserId(userId);
 		Order order = new Order();
@@ -69,7 +74,9 @@ public class OrderService {
 
 		order.setOrderRow(rowList);
 		cartRepo.delete(cart);
+		logger.info("Salvataggio ordine con id [" + order.getOrderId() + "]");
 
 		return orderDto;
+		
 	}
 }

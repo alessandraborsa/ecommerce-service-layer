@@ -1,5 +1,7 @@
 package it.objectmethod.ecommerce.controller;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,6 +18,8 @@ public class CartController {
 
 	@Autowired
 	private CartService cartSrvc;
+	
+	private static final Logger logger = LogManager.getLogger(CartController.class);
 
 	@RequestMapping("/addItem")
 	public ResponseEntity<CartDTO> saveItemToCart(@RequestParam("quantity") Integer quantity,
@@ -26,6 +30,7 @@ public class CartController {
 		CartDTO cartDto = cartSrvc.addCartItem(itemId, quantity, userId);
 		if (cartDto != null) {
 			resp = new ResponseEntity<CartDTO>(cartDto, HttpStatus.OK);
+			logger.info("Carrello creato per l'utente [" + userId + "]");
 		} else {
 			resp = new ResponseEntity<CartDTO>(HttpStatus.BAD_REQUEST);
 		}

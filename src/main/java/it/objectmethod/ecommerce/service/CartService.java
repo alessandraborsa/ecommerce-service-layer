@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,8 +32,13 @@ public class CartService {
 
 	@Autowired
 	private ItemRepository itemRepo;
+	
+	private static final Logger logger = LogManager.getLogger(CartService.class);
 
 	public CartDTO addCartItem(Integer quantity, Integer itemId, Integer userId) {
+		
+		logger.info("Richiesta di aggiunta articolo al carrello effettuata per l'utente [" + userId
+		+ "] per l'articolo [" + itemId + "]");
 
 		User user = userRepo.findById(userId).get();
 		Optional<Item> it = itemRepo.findById(itemId);
@@ -84,6 +91,7 @@ public class CartService {
 				cart = cartRepo.save(cart);
 
 				cartDto = cartMapper.toDto(cart);
+				logger.info("Articolo salvato nel carrello con id [" + cart.getCartId() + "]");
 
 			}
 
