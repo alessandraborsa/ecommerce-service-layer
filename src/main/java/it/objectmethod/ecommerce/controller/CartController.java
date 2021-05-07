@@ -30,7 +30,7 @@ public class CartController {
 		CartDTO cartDto = cartSrvc.addCartItem(itemId, quantity, userId);
 		if (cartDto != null) {
 			resp = new ResponseEntity<CartDTO>(cartDto, HttpStatus.OK);
-			logger.info("Carrello creato per l'utente [" + userId + "]");
+			logger.info("articolo salvato nel carrello dell'utente [" + userId + "]");
 		} else {
 			resp = new ResponseEntity<CartDTO>(HttpStatus.BAD_REQUEST);
 		}

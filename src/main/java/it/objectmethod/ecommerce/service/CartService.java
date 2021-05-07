@@ -37,8 +37,7 @@ public class CartService {
 
 	public CartDTO addCartItem(Integer quantity, Integer itemId, Integer userId) {
 		
-		logger.info("Richiesta di aggiunta articolo al carrello effettuata per l'utente [" + userId
-		+ "] per l'articolo [" + itemId + "]");
+	
 
 		User user = userRepo.findById(userId).get();
 		Optional<Item> it = itemRepo.findById(itemId);
@@ -91,7 +90,7 @@ public class CartService {
 				cart = cartRepo.save(cart);
 
 				cartDto = cartMapper.toDto(cart);
-				logger.info("Articolo salvato nel carrello con id [" + cart.getCartId() + "]");
+				
 
 			}
 

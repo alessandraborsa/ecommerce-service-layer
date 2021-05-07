@@ -38,7 +38,7 @@ public class OrderService {
 
 	public OrderDTO insertOrder(Integer userId) {
 
-		logger.info("Richiesta servizio salvataggio ordine per l'utente [" + userId + "]");
+		logger.info("Richiesta salvataggio ordine per l'utente [" + userId + "]");
 		OrderDTO orderDto = null;
 		Cart cart = cartRepo.findByUserUserId(userId);
 		Order order = new Order();

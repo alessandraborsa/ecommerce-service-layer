@@ -29,7 +29,6 @@ public class OrderController {
 		OrderDTO orderDto = ordSrvc.insertOrder(userId);
 		if (orderDto != null) {
 			resp = new ResponseEntity<OrderDTO>(orderDto, HttpStatus.OK);
-			logger.info("ordine salvato per id utente [" + userId + "]");
 		} else {
 			resp = new ResponseEntity<OrderDTO>(HttpStatus.BAD_REQUEST);
 		}
