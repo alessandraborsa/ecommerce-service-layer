@@ -1,9 +1,49 @@
-2021-05-07 11:39:57,309 INFO o.s.b.StartupInfoLogger [main] Starting EcommerceApplicationTests using Java 15.0.2 on MBPdiAlessandra.homenet.telecomitalia.it with PID 3135 (started by alessandraborsa in /Users/alessandraborsa/Documents/om/ecommerce-master)
-2021-05-07 11:39:57,315 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.4.4, Spring v5.3.5
-2021-05-07 11:39:57,319 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
-2021-05-07 11:40:04,923 INFO o.s.b.StartupInfoLogger [main] Started EcommerceApplicationTests in 8.005 seconds (JVM running for 9.829)
-2021-05-07 11:52:24,861 INFO o.s.b.StartupInfoLogger [main] Starting EcommerceApplication using Java 15.0.2 on MBPdiAlessandra.homenet.telecomitalia.it with PID 3211 (/Users/alessandraborsa/Documents/om/ecommerce-master/target/classes started by alessandraborsa in /Users/alessandraborsa/Documents/om/ecommerce-master)
-2021-05-07 11:52:24,885 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.4.4, Spring v5.3.5
-2021-05-07 11:52:24,889 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
-2021-05-07 11:52:32,746 INFO o.s.b.StartupInfoLogger [main] Started EcommerceApplication in 8.335 seconds (JVM running for 9.529)
-2021-05-07 11:52:44,762 INFO i.o.e.c.UserController [http-nio-8080-exec-4] Richiesta di login con nome utente: [Stefania]
+2021-05-10 09:55:59,689 INFO o.s.b.StartupInfoLogger [main] Starting EcommerceApplicationTests using Java 15.0.2 on MBPdiAlessandra.homenet.telecomitalia.it with PID 999 (started by alessandraborsa in /Users/alessandraborsa/Documents/om/ecommerce-master)
+2021-05-10 09:55:59,712 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-05-10 09:55:59,718 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-05-10 09:56:07,060 INFO o.s.b.StartupInfoLogger [main] Started EcommerceApplicationTests in 7.764 seconds (JVM running for 9.603)
+2021-05-10 10:31:49,293 INFO o.s.b.StartupInfoLogger [main] Starting EcommerceApplication using Java 15.0.2 on MBPdiAlessandra.homenet.telecomitalia.it with PID 1115 (/Users/alessandraborsa/Documents/om/ecommerce-master/target/classes started by alessandraborsa in /Users/alessandraborsa/Documents/om/ecommerce-master)
+2021-05-10 10:31:49,308 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-05-10 10:31:49,311 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-05-10 10:31:58,138 INFO o.s.b.StartupInfoLogger [main] Starting EcommerceApplication using Java 15.0.2 on MBPdiAlessandra.homenet.telecomitalia.it with PID 1117 (/Users/alessandraborsa/Documents/om/ecommerce-master/target/classes started by alessandraborsa in /Users/alessandraborsa/Documents/om/ecommerce-master)
+2021-05-10 10:31:58,151 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-05-10 10:31:58,154 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-05-10 10:32:23,710 INFO o.s.b.StartupInfoLogger [main] Starting EcommerceApplication using Java 15.0.2 on MBPdiAlessandra.homenet.telecomitalia.it with PID 1120 (/Users/alessandraborsa/Documents/om/ecommerce-master/target/classes started by alessandraborsa in /Users/alessandraborsa/Documents/om/ecommerce-master)
+2021-05-10 10:32:23,726 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-05-10 10:32:23,728 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-05-10 10:37:11,222 INFO o.s.b.StartupInfoLogger [main] Starting EcommerceApplication using Java 15.0.2 on MBPdiAlessandra.homenet.telecomitalia.it with PID 1145 (/Users/alessandraborsa/Documents/om/ecommerce-master/target/classes started by alessandraborsa in /Users/alessandraborsa/Documents/om/ecommerce-master)
+2021-05-10 10:37:11,245 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-05-10 10:37:11,248 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-05-10 10:37:48,361 INFO o.s.b.StartupInfoLogger [main] Starting EcommerceApplication using Java 15.0.2 on MBPdiAlessandra.homenet.telecomitalia.it with PID 1146 (/Users/alessandraborsa/Documents/om/ecommerce-master/target/classes started by alessandraborsa in /Users/alessandraborsa/Documents/om/ecommerce-master)
+2021-05-10 10:37:48,370 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-05-10 10:37:48,373 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-05-10 10:39:20,130 INFO o.s.b.StartupInfoLogger [main] Starting EcommerceApplication using Java 15.0.2 on MBPdiAlessandra.homenet.telecomitalia.it with PID 1152 (/Users/alessandraborsa/Documents/om/ecommerce-master/target/classes started by alessandraborsa in /Users/alessandraborsa/Documents/om/ecommerce-master)
+2021-05-10 10:39:20,147 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-05-10 10:39:20,149 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-05-10 10:45:00,444 INFO o.s.b.StartupInfoLogger [main] Starting EcommerceApplicationTests using Java 15.0.2 on MBPdiAlessandra.homenet.telecomitalia.it with PID 1207 (started by alessandraborsa in /Users/alessandraborsa/Documents/om/ecommerce-master)
+2021-05-10 10:45:00,449 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-05-10 10:45:00,456 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-05-10 10:52:16,639 INFO o.s.b.StartupInfoLogger [main] Starting EcommerceApplication using Java 15.0.2 on MBPdiAlessandra.homenet.telecomitalia.it with PID 1277 (/Users/alessandraborsa/Documents/om/ecommerce-master/target/classes started by alessandraborsa in /Users/alessandraborsa/Documents/om/ecommerce-master)
+2021-05-10 10:52:16,655 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-05-10 10:52:16,658 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-05-10 12:21:06,585 INFO o.s.b.StartupInfoLogger [main] Starting EcommerceApplication using Java 15.0.2 on MBPdiAlessandra.homenet.telecomitalia.it with PID 1957 (/Users/alessandraborsa/Documents/om/ecommerce-master/target/classes started by alessandraborsa in /Users/alessandraborsa/Documents/om/ecommerce-master)
+2021-05-10 12:21:06,595 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-05-10 12:21:06,597 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-05-10 16:19:06,325 INFO o.s.b.StartupInfoLogger [main] Starting EcommerceApplicationTests using Java 15.0.2 on MBPdiAlessandra.homenet.telecomitalia.it with PID 3905 (started by alessandraborsa in /Users/alessandraborsa/Documents/om/ecommerce-master)
+2021-05-10 16:19:06,332 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-05-10 16:19:06,338 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-05-10 16:22:08,932 INFO o.s.b.StartupInfoLogger [main] Starting EcommerceApplicationTests using Java 15.0.2 on MBPdiAlessandra.homenet.telecomitalia.it with PID 3958 (started by alessandraborsa in /Users/alessandraborsa/Documents/om/ecommerce-master)
+2021-05-10 16:22:08,938 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-05-10 16:22:08,947 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-05-10 16:25:24,714 INFO o.s.b.StartupInfoLogger [main] Starting EcommerceApplicationTests using Java 15.0.2 on MBPdiAlessandra.homenet.telecomitalia.it with PID 4011 (started by alessandraborsa in /Users/alessandraborsa/Documents/om/ecommerce-master)
+2021-05-10 16:25:24,721 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-05-10 16:25:24,730 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-05-10 16:26:59,125 INFO o.s.b.StartupInfoLogger [main] Starting EcommerceApplicationTests using Java 15.0.2 on MBPdiAlessandra.homenet.telecomitalia.it with PID 4043 (started by alessandraborsa in /Users/alessandraborsa/Documents/om/ecommerce-master)
+2021-05-10 16:26:59,130 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-05-10 16:26:59,137 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-05-10 16:28:16,870 INFO o.s.b.StartupInfoLogger [main] Starting EcommerceApplicationTests using Java 15.0.2 on MBPdiAlessandra.homenet.telecomitalia.it with PID 4083 (started by alessandraborsa in /Users/alessandraborsa/Documents/om/ecommerce-master)
+2021-05-10 16:28:16,875 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-05-10 16:28:16,879 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-05-10 16:34:38,764 INFO o.s.b.StartupInfoLogger [main] Starting EcommerceApplicationTests using Java 15.0.2 on MBPdiAlessandra.homenet.telecomitalia.it with PID 4161 (started by alessandraborsa in /Users/alessandraborsa/Documents/om/ecommerce-master)
+2021-05-10 16:34:38,770 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-05-10 16:34:38,777 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
